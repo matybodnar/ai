@@ -3,45 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Advanced Options</title>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const hello = document.querySelector('#hello');
-
-            document.querySelector('#color').onchange = function() {
-                hello.style.color = this.value;
-            };
-
-            document.querySelector('#size').onchange = function() {
-                hello.style.fontSize = this.value + 'px';
-            };
-
-            document.querySelector('#font').onchange = function() {
-                hello.style.fontFamily = this.value;
-            };
-
-            document.querySelector('#background').onchange = function() {
-                document.body.style.background = this.value;
-            };
-
-            document.querySelector('#border').onchange = function() {
-                hello.style.border = this.value;
-            };
-
-            document.querySelector('#shadow').onchange = function() {
-                hello.style.textShadow = this.value;
-            };
-
-        });
-    </script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <h1 id="hello" style="padding: 15px;">Hello!</h1>
 
-    <!-- COLORS -->
     <h3>Text Color</h3>
     <select id="color">
         <option value="black">Black</option>
@@ -57,7 +25,6 @@
         <option value="#ff00ff">Magenta</option>
     </select>
 
-    <!-- FONT SIZE -->
     <h3>Text Size</h3>
     <select id="size">
         <option value="20">20 px</option>
@@ -68,7 +35,6 @@
         <option value="70">70 px</option>
     </select>
 
-    <!-- FONTS -->
     <h3>Font Family</h3>
     <select id="font">
         <option value="Arial">Arial</option>
@@ -83,7 +49,6 @@
         <option value="'Lucida Console'">Lucida Console</option>
     </select>
 
-    <!-- BACKGROUND -->
     <h3>Page Background</h3>
     <select id="background">
         <option value="white">White</option>
@@ -97,7 +62,6 @@
         <option value="linear-gradient(to right, #00ff87, #60efff)">Neon Gradient</option>
     </select>
 
-    <!-- BORDER -->
     <h3>Border</h3>
     <select id="border">
         <option value="none">None</option>
@@ -111,7 +75,6 @@
         <option value="6px groove cyan">Cyan Groove</option>
     </select>
 
-    <!-- SHADOW -->
     <h3>Text Shadow</h3>
     <select id="shadow">
         <option value="none">None</option>
